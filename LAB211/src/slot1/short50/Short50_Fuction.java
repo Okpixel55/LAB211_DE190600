@@ -11,9 +11,9 @@ public class Short50_Fuction {
     public List<Float> solveSuperlativeEquation(float a, float b) {
         if (a == 0) {
             if (b == 0) {
-                return new ArrayList<>(); // Infinitely many solutions
+                return new ArrayList<>(); 
             } else {
-                return null; // No solution
+                return null; 
             }
         } else {
             float x = -b / a;
@@ -27,13 +27,13 @@ public class Short50_Fuction {
     public List<Float> solveQuadraticEquation(float a, float b, float c) {
         List<Float> solutions = new ArrayList<>();
         if (a == 0) {
-            // If a = 0, it becomes a superlative equation
+           
             return solveSuperlativeEquation(b, c);
         }
         
         float delta = b * b - 4 * a * c;
         if (delta < 0) {
-            return solutions; // No real solutions
+            return solutions; 
         } else if (delta == 0) {
             float x = -b / (2 * a);
             solutions.add(x);
@@ -49,7 +49,7 @@ public class Short50_Fuction {
 
     
     public boolean isOdd(float number) {
-        if (number % 1 != 0) { // Check if it's an integer
+        if (number % 1 != 0) { 
             return false;
         }
         int integerNumber = (int) number;
@@ -62,7 +62,7 @@ public class Short50_Fuction {
             return false;
         }
         float sqrt = (float) Math.sqrt(number);
-        // Check if the square root is an integer
+        
         return sqrt == (int) sqrt;
     }
     
@@ -79,3 +79,4 @@ public class Short50_Fuction {
         }
     }
 }
+
