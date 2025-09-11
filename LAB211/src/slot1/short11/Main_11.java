@@ -34,16 +34,12 @@ public class Main_11 extends Menu {
     private void convertNumber() {
         System.out.println("--- Convert a Number ---");
         
-        // Step 1: Get input base
         int inputBase = getBaseChoice("Enter the input base:\n1. Binary (2)\n2. Decimal (10)\n3. Hexadecimal (16)\nYour choice: ");
         
-        // Step 2: Get output base
         int outputBase = getBaseChoice("Enter the output base:\n1. Binary (2)\n2. Decimal (10)\n3. Hexadecimal (16)\nYour choice: ");
-        
-        // Step 3: Get input value
+       
         String inputValue = getInputNumber(inputBase);
-        
-        // Step 4: Process and print output
+       
         long decimalValue = Short11_ChangeBaseNumber.toDecimal(inputValue, inputBase);
         String outputValue = Short11_ChangeBaseNumber.fromDecimal(decimalValue, outputBase);
         
@@ -93,3 +89,4 @@ public class Main_11 extends Menu {
         program.run();
     }
 }
+
