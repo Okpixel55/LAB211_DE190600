@@ -3,7 +3,6 @@ package slot1.short11;
 
 import java.util.Scanner;
 
-
 public class Main_11 extends Menu {
     private final Scanner scanner;
     
@@ -42,10 +41,10 @@ public class Main_11 extends Menu {
         
         
         String inputValue = getInputNumber(inputBase);
+        Short11_ChangeBaseNumber change= new Short11_ChangeBaseNumber();
         
-        
-        long decimalValue = Short11_ChangeBaseNumber.toDecimal(inputValue, inputBase);
-        String outputValue = Short11_ChangeBaseNumber.fromDecimal(decimalValue, outputBase);
+        long decimalValue = change.toDecimal(inputValue, inputBase);
+        String outputValue = change.fromDecimal(decimalValue, outputBase);
         
         System.out.println("The converted value is: " + outputValue);
     }
