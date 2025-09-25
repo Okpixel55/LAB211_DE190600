@@ -68,15 +68,17 @@ public class Main_51 extends Menu {
         Memory memory = new Memory(a);
         do {
             op = Validator.checkOperator("Enter Opertator( '=' to stop calculator): ");
-            if (op.equals("=")) {
-                break;
+            //
+            if(op.equals("=")){
+                System.out.println("Final Result: " + memory.getNumber());
+                return;
             }
-            double b = Validator.checkNumDouble("Enter Number: ", false);
+            double b = Validator.checkNumDouble("ENter Number", true);
             double rs = cal.calculate(memory, op, b);
             memory.setNumber(rs);
             System.out.println("Result: " + rs);
         } while (true);
-        System.out.println("Final Result: " + memory.getNumber());
+        
     }
 
     private void inputCalulatorBMI() {

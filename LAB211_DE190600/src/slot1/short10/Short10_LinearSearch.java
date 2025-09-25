@@ -4,7 +4,6 @@
  */
 package slot1.short10;
 
-import java.util.Scanner;
 import java.util.Random;
 import java.util.Arrays;
 
@@ -14,7 +13,7 @@ import java.util.Arrays;
  */
 public class Short10_LinearSearch {
     public int[] makeRandomArrayOnNumber(int number) {
-        int[] randomArray = new int[number];
+        int[] randomArray = new int[number]; 
         Random random = new Random();
 
         for (int i = 0; i < randomArray.length; i++) {
@@ -29,13 +28,12 @@ public class Short10_LinearSearch {
     public void Search(int search, int[]randomArray){
     boolean found = false;
 
-        for (int i = 0; i < randomArray.length; i++) {
-            if (randomArray[i] == search) {
-                System.out.println("Found " + search + " at index: " + i);
-                found = true;
-                break;
-                
-            }
+        //
+        for(int i=0; i< randomArray.length; i++){
+        if (randomArray[i]==search){
+            System.out.println("Find"+search+"in"+i);
+            found =true;
+}
         }
 
         if (!found) {

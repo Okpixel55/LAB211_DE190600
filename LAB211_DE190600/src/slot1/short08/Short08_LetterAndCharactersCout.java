@@ -2,7 +2,6 @@ package slot1.short08;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 import java.util.StringJoiner;
 
 public class Short08_LetterAndCharactersCout {
