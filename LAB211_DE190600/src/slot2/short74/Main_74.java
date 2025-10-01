@@ -8,6 +8,7 @@ package slot2.short74;
  *
  * @author ADMIN
  */
+import slot4.short105.Menu;
 import slot2.Validator;
 
 public class Main_74 extends Menu {
